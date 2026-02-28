@@ -4,7 +4,7 @@
 
 Develop strong networking fundamentals through hands-on configuration and packet-level analysis within a virtualized lab environment.
 
-This lab reinforces core networking concepts aligned with CompTIA Network+ objectives, including TCP/IP behavior, subnetting, DNS resolution, and traffic analysis.
+This lab takes a hands-on approach at core networking concepts aligned with my CompTIA Network+ study objectives, including TCP/IP behavior, subnetting, DNS resolution, and traffic analysis.
 
 ---
 
