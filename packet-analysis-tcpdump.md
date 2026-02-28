@@ -16,7 +16,7 @@ This exercise reinforces my practical understanding of:
 # 1️⃣ ARP Analysis (Layer 2)
 
 ## What Was Observed
-![ARP Request and Reply](screenshots/01-arp-request-reply.png)
+![ARP Request and Reply](screenshots/04-arp-windows-to-linux.png)
 
 ## Explanation
 
@@ -32,7 +32,7 @@ This exercise reinforces my practical understanding of:
 
 ## What Was Observed
 
-![ICMP Echo Request and Reply](screenshots/02-icmp-echo-request-reply.png)
+![ICMP Echo Request and Reply](screenshots/03-icmp-echo-request-reply.png)
 
 ## Explanation
 
@@ -46,7 +46,7 @@ This exercise reinforces my practical understanding of:
 
 ## What Was Observed
 
-![TCP Three-Way Handshake](screenshots/03-tcp-three-way-handshake.png)
+![TCP Three-Way Handshake](screenshots/06-tcp-three-way-handshake-controlled.png)
 
 ## Handshake Breakdown
 
