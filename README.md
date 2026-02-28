@@ -14,6 +14,7 @@ Virtualization:
 - VMware Fusion (Apple Silicon)
 
 Virtual Machines:
+- Linux OS
 - Windows 11
 - Ubuntu Server
 
