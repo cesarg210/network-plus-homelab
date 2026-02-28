@@ -58,11 +58,10 @@ Networking Configuration:
 - Validated authentication through packet capture
 
 ### 4. Wireshark Packet dissection
-- Expand and observe:
+ Expand and observe:
 - Ethernet headers
 - IP headers
 - TCP headers
-- Observe:
 - TTL
 - window size
 - MSS option
