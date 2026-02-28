@@ -57,20 +57,17 @@ Networking Configuration:
 - Identified client-to-KDC communication
 - Validated authentication through packet capture
 
----
-
-## Subnetting Practice
-
-Example network used in lab:
-
-192.168.170.0/24
-
-Documented:
-- Network address
-- Broadcast address
-- Usable host range
-- Host count
-- CIDR interpretation
+### 4. Wireshark Packet dissection
+- Expand and observe:
+- Ethernet headers
+- IP headers
+- TCP headers
+- Observe:
+- TTL
+- window size
+- MSS option
+- TCP options
+- raw hex data
 
 ---
 
