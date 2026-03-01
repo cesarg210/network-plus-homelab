@@ -28,8 +28,6 @@ Networking Configuration:
 
 ## Networking Skills Practiced
 
-- Static IP configuration
-- Default gateway configuration
 - Subnet mask interpretation
 - CIDR notation analysis
 - DNS resolution troubleshooting
@@ -42,10 +40,14 @@ Networking Configuration:
 
 ## Packet Analysis Exercises
 
-### 1. TCP Handshake Breakdown
-- Observed SYN, SYN-ACK, ACK sequence
+### 1. TCP, ARP, ICMP Breakdown
+- TCP three-way handshake (Layer 4)
 - Identified source and destination ports
 - Analyzed sequence numbers
+- ARP resolution (Layer 2)
+- ICMP communication (Layer 3)
+- Sequence and acknowledgment behavior
+- SYN flood mechanics
 
 ### 2. DNS Query Analysis
 - Captured DNS SRV lookups
@@ -54,11 +56,12 @@ Networking Configuration:
 
 ### 3. Kerberos Authentication Flow
 - Observed traffic on port 88
-- Identified client-to-KDC communication
+- Identified client-to-KDC communication (same host)
 - Validated authentication through packet capture
+- Observed UDP to TCP fallback behavior
 
 ### 4. Wireshark Packet dissection
- Expand and observe:
+ Expand and observed:
 - Ethernet headers
 - IP headers
 - TCP headers
