@@ -1,0 +1,98 @@
+# Wireshark Kerberos Packet Analysis
+
+## Objective
+
+The goal of this lab was to capture and analyze Kerberos authentication traffic generated when a Windows domain client authenticated to a Linux-based Active Directory Domain Controller.
+
+This exercise demonstrates how enterprise authentication traffic appears on the network and how Wireshark can be used to analyze protocol-level behavior.
+
+---
+
+## Lab Environment
+
+| Component            | Description                                  |
+| -------------------- | -------------------------------------------- |
+| Host System          | Mac (Apple Silicon M1, 8GB RAM)              |
+| Hypervisor           | VMware Fusion                                |
+| Domain Controller    | Ubuntu Server running Samba Active Directory |
+| Domain Name          | `corp.local`                                 |
+| Domain Controller IP | `192.168.170.130`                            |
+| Windows Client       | Windows 11 VM joined to domain               |
+| Client IP            | `192.168.170.128`                            |
+
+Both virtual machines were connected to the same NAT network.
+
+---
+
+## Wireshark Analysis
+
+The following authentication sequence was observed:
+
+```
+Client → Domain Controller : AS-REQ
+Domain Controller → Client : AS-REP
+Client → Domain Controller : TGS-REQ
+Domain Controller → Client : TGS-REP
+```
+
+---
+
+## Kerberos Authentication Flow
+
+### AS-REQ (Authentication Service Request)
+
+The Windows client sends a request to the Domain Controller to authenticate as a domain user.
+
+Important fields observed:
+
+* `msg-type: AS-REQ`
+* `realm: CORP.LOCAL`
+* `cname: administrator`
+
+This message requests a **Ticket Granting Ticket (TGT)**.
+
+---
+
+### AS-REP (Authentication Service Reply)
+
+The Domain Controller responds by issuing a **Ticket Granting Ticket** to the client.
+
+This ticket allows the client to request additional service tickets without re-entering credentials.
+
+---
+
+### TGS-REQ (Ticket Granting Service Request)
+
+After authentication, the client requests a **service ticket** to access domain resources such as:
+
+* SYSVOL share
+* LDAP services
+* Domain Controller services
+
+---
+
+### TGS-REP (Ticket Granting Service Reply)
+
+The Domain Controller issues the requested service ticket, allowing the client to access the requested resource.
+
+---
+
+## Encryption Observations
+
+Within the Kerberos ticket fields the following encryption type was observed:
+
+```
+aes256-cts-hmac-sha1-96
+```
+
+AES-based encryption is the recommended modern Kerberos encryption standard.
+
+Older environments sometimes use weaker encryption types that can be vulnerable to credential attacks.
+
+---
+
+## Key Takeaway
+
+This lab demonstrates how Kerberos authentication appears at the packet level during domain login and service access.
+
+Analyzing authentication traffic helps security analysts understand how identity systems operate and how attackers may attempt to abuse authentication protocols in enterprise environments.
