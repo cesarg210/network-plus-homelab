@@ -14,7 +14,7 @@ Analyze DNS traffic at the packet level using tcpdump and understand:
 
 # Screenshot
 
-![DNS Query and Response](screenshots/10-dns-query-response.png)
+![DNS Query and Response](../screenshots/10-dns-query-response.png)
 
 ---
 
