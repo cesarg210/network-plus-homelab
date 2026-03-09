@@ -75,9 +75,7 @@ Networking Configuration:
 
 ### 4. Wireshark Packet dissection
  Expand and observed:
-- Ethernet headers
-- IP headers
-- TCP headers
+- Ethernet, IP, and TCP headers
 - TTL
 - window size
 - MSS option
