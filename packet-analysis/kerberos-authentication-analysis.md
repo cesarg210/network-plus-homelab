@@ -13,7 +13,7 @@ Capture and analyze Kerberos authentication traffic using tcpdump to understand:
 
 # Screenshot
 
-![Kerberos Authentication Capture](screenshots/11-kerberos-as-req-as-rep-loopback.png)
+![Kerberos Authentication Capture](../screenshots/11-kerberos-as-req-as-rep-loopback.png)
 
 ---
 
