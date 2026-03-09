@@ -26,7 +26,7 @@ Both virtual machines were connected to the same NAT network.
 
 ## Wireshark Analysis
 
-![Kerberos Wireshark Analysis](screenshots/wireshark-kerberos-analysis.png)
+![Kerberos Wireshark Analysis](../screenshots/wireshark-kerberos-analysis.png)
 
 The following authentication sequence was observed:
 
