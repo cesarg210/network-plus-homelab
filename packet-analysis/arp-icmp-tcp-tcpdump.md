@@ -16,7 +16,7 @@ This exercise reinforces my practical understanding of:
 # 1️⃣ ARP Analysis (Layer 2)
 
 ## What Was Observed
-![ARP Request and Reply](screenshots/04-arp-windows-to-linux.png)
+![ARP Request and Reply](network-plus-homelab/screenshots/04-arp-windows-to-linux.png)
 
 ## Explanation
 
