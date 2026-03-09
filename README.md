@@ -24,7 +24,7 @@ Networking Configuration:
 - Static IP configuration via Netplan
 - Manual DNS configuration
 
-![IP Configuration](screenshots/subnetting-practice.png)
+![IP Configuration](screenshots/01-ip-and-routing-baseline.png)
 
 Observed IP Address: 192.168.170.130/24
 
