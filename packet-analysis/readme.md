@@ -1,1 +1,1 @@
-# This folder contains all of my documented progress and what I learned.
+# This folder contains all of my operations, documented progress and what I learned.
